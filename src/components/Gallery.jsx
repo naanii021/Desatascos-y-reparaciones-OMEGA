@@ -7,11 +7,11 @@ export function Gallery({ images = [], intervalMs = 1800 }) {
   const [paused, setPaused] = useState(false);
   const timerRef = useRef(null);
 
-  // 🔧 Debe coincidir con el CSS
-  const SLIDE_W = 300; // width de .shot
-  const GAP = 20;      // gap del .track
 
-  // Si tienes exactamente 10, perfecto. Si tienes menos, duplicamos para que el carrusel nunca "muera".
+  const SLIDE_W = 300; 
+  const GAP = 20;      
+
+  // Imágenes para el loop infinito
   const loopImages = useMemo(() => {
     if (!images.length) return [];
 
@@ -22,13 +22,12 @@ export function Gallery({ images = [], intervalMs = 1800 }) {
     return out;
   }, [images]);
 
-  // Cuántas caben completas en el viewport (para saber hasta dónde puede avanzar sin dejar huecos)
+  // Cálculo de cuántas imágenes son visibles según el ancho
   const [visible, setVisible] = useState(1);
 
   useEffect(() => {
     const compute = () => {
       const w = window.innerWidth;
-      // ancho aproximado usable: container 1120 o viewport menos padding
       const usable = Math.min(1120, w - 36);
       const per = SLIDE_W + GAP;
       return Math.max(1, Math.floor(usable / per));

@@ -55,7 +55,7 @@ h1,h2,h3,h4{ margin: 0; }
 }
 
 /* =========================
-   Utilidades pequeñas (tu JSX las usa)
+   Utilidades pequeñas 
 ========================= */
 .flex-center{ display: flex; align-items: center; }
 .gap-2{ gap: 8px; }
@@ -185,7 +185,7 @@ h1,h2,h3,h4{ margin: 0; }
   letter-spacing: .3px;
 }
 
-/* animación pulse (suave, no cantosa) */
+/* animación pulse */
 .animate-pulse{
   animation: pulseSoft 1.6s ease-in-out infinite;
 }

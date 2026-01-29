@@ -43,7 +43,7 @@
 
 .track{
   display: flex;
-  gap: 20px; /* ✅ CLAVE: coincide con GAP del JS */
+  gap: 20px; 
   transition: transform .6s ease;
   will-change: transform;
 }
@@ -53,7 +53,7 @@
 }
 
 .shot{
-  width: 300px;  /* ✅ coincide con SLIDE_W del JS */
+  width: 300px;
   height: 310px;
   border-radius: 18px;
   overflow: hidden;

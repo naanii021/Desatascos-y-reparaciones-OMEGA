@@ -10,14 +10,13 @@ const galleryImages = Object.entries(
   .map(([, url]) => url);
 
 export default function App() {
-  // Si quieres, pásalos a .env (VITE_PHONE_MAIN / VITE_PHONE_URG)
   const phoneNumber1 = "695405072";
   const phoneNumberUrgencias = "699151190";
 
   // Fondo hero robusto: si no hay 5 imágenes, usa la primera; si no hay ninguna, deja sin url
   const heroImage = galleryImages.at(4) ?? galleryImages.at(0) ?? "";
 
-  // Firma en consola solo en desarrollo (evita ensuciar producción)
+  // Firma en consola personal
   if (import.meta.env.DEV) {
     console.log(
       `%c
@@ -42,6 +41,7 @@ export default function App() {
   }
 
   return (
+    // Estructura principal de la app
     <div className="main-wrapper">
       <div className="top-bar">
         <MapPin size={14} />
@@ -85,6 +85,7 @@ export default function App() {
             : `linear-gradient(rgba(0, 100, 93, 0.7), rgba(0, 100, 93, 0.7))`,
         }}
       >
+        
         <div className="hero-content">
           <h2 className="hero-title">SOLUCIONES INTEGRALES EN SANEAMIENTO</h2>
           <p className="hero-desc">
