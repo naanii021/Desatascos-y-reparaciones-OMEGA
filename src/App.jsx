@@ -1,5 +1,5 @@
 import { Phone, Clock, MapPin, Wrench, Droplets, Shield, MessageCircle, Mail, Camera, Target } from "lucide-react";
-import { Gallery } from "./components/Gallery";
+import { Gallery } from "./components/gallery.jsx";
 import "./index.css";
 
 // Importación de tus fotos reales (Vite)
