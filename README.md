@@ -1,73 +1,112 @@
-# React + TypeScript + Vite
+🛠️ Desatascos Omega
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto web corporativo para Desatascos Omega, una empresa de saneamiento y mantenimiento que ofrece servicios profesionales en Cáceres, Badajoz y alrededores.
 
-Currently, two official plugins are available:
+La idea de esta web es clara:
+👉 mostrar servicios reales, generar confianza y facilitar el contacto inmediato, especialmente en situaciones de urgencia.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologías utilizadas
 
-## React Compiler
+Este proyecto está desarrollado con tecnologías modernas de frontend:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚛️ React
 
-## Expanding the ESLint configuration
+⚡ Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🎨 CSS puro (sin frameworks)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🧩 Lucide Icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🖼️ Carga dinámica de imágenes con import.meta.glob
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Todo el diseño está hecho a mano, cuidando:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+rendimiento
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+claridad visual
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+experiencia en móvil
+
+identidad propia
+
+🐺 Identidad del proyecto
+
+El proyecto incluye una firma personalizada en consola en entorno de desarrollo, con un ASCII art de un lobo, símbolo que llevo usando desde hace años como marca personal.
+
+No afecta a producción y sirve como detalle de identidad y autoría.
+
+🖼️ Galería de trabajos
+
+La web cuenta con un carrusel automático de imágenes donde se muestran trabajos reales:
+
+desatascos
+
+limpiezas
+
+inspecciones con cámara
+
+Características del carrusel:
+
+imágenes grandes para apreciar bien el trabajo
+
+movimiento automático
+
+responsive
+
+sin dependencias externas
+
+📱 Diseño responsive
+
+La web está adaptada a:
+
+móvil
+
+tablet
+
+escritorio
+
+Con especial atención a:
+
+botones grandes y claros
+
+llamada directa por teléfono
+
+botón flotante de WhatsApp
+
+lectura rápida de servicios
+
+📞 Enfoque del proyecto
+
+Este proyecto no está pensado como una web genérica, sino como una herramienta real para negocio:
+
+contacto inmediato
+
+urgencias 24h visibles
+
+servicios bien explicados
+
+confianza visual
+
+🧑‍💻 Autor
+
+Desarrollado por Daniel Iglesias
+Alias: @naanii021 / Dev Omega
+
+GitHub:
+👉 https://github.com/naanii021
+
+📌 Notas finales
+
+Este proyecto sigue en evolución.
+La prioridad no es “meter cosas porque sí”, sino hacerlo bien, claro y funcional.
+
+Si estás revisando el código:
+
+los commits son progresivos
+
+el CSS está estructurado
+
+no hay dependencias innecesarias
+
+🐺 Naanii
+Hecho con cabeza, no con prisas.
