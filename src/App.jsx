@@ -4,7 +4,11 @@ import "./index.css";
 
 // Importación de tus fotos reales (Vite)
 const galleryImages = Object.entries(
-  import.meta.glob("./assets/*.{jpg,jpeg,png,webp}", { eager: true, as: "url" })
+  import.meta.glob("./assets/*.{jpg,jpeg,png,webp}", {
+  eager: true,
+  query: "?url",
+  import: "default",
+})
 )
   .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
   .map(([, url]) => url);
