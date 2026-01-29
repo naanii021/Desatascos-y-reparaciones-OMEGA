@@ -2,6 +2,8 @@ import { Phone, Clock, MapPin, Wrench, Droplets, Shield, MessageCircle, Mail, Ca
 import { Gallery } from "./components/gallery.jsx";
 import "./index.css";
 
+
+
 // Importación de tus fotos reales (Vite)
 const galleryImages = Object.entries(
   import.meta.glob("./assets/*.{jpg,jpeg,png,webp}", {
