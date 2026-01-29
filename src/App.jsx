@@ -1,14 +1,10 @@
 import { Phone, Clock, MapPin, Wrench, Droplets, Shield, MessageCircle, Mail, Camera, Target } from "lucide-react";
-import { Gallery } from "./gallery.jsx";
+import { Gallery } from "./components/Gallery";
 import "./index.css";
 
 // Importación de tus fotos reales (Vite)
 const galleryImages = Object.entries(
-  import.meta.glob("./assets/*.{jpg,jpeg,png,webp}", {
-  eager: true,
-  query: "?url",
-  import: "default",
-})
+  import.meta.glob("./assets/*.{jpg,jpeg,png,webp}", { eager: true, as: "url" })
 )
   .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
   .map(([, url]) => url);
